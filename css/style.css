@@ -1,0 +1,187 @@
+  
+
+body{
+  background:url(../images/background2) cadetblue;
+  display: flexbox;
+  padding: 0%;
+  margin: 0%;
+  backdrop-filter: blur(50px);
+
+}
+		*{
+			text-decoration: none;
+		}
+		.navbar{
+			background:url(../images/background2) cadetblue;font-family: calibri; padding-right: 15px;padding-left: 15px;
+background: transparent;
+		}
+		.navdiv{
+			display: flex; align-items: center; justify-content: space-between;
+		}
+		.logo a{
+			font-size: 40px; font-weight: 600; color: white;
+      margin-left: 30px;
+		}
+		li{
+			list-style: none; display: inline-block;
+		}
+		li a{
+			color:white; font-size: 18px; font-weight: bold; margin-right: 25px;
+		}
+   li :hover{
+    color: greenyellow;
+   }
+		button{
+			background-color:cornflowerblue; margin-left: 10px; border-radius: 10px; padding: 10px; width: 90px;
+      border-color: whitesmoke; 
+		}
+		button a{
+			color: whitesmoke; font-weight: bold; font-size: 15px;
+		}
+    button :hover{
+      color: greenyellow;
+    }
+  
+       
+   .container{    
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 10px;
+   margin-left: 350px;
+   margin-top: 40px;       
+   backdrop-filter: blur(10px);
+   border: 2px solid white;
+     
+   }
+   .container header{
+    font-size: 2.5rem;
+    color:white;
+    font-weight: bold;
+    text-align: center;
+   }
+   .container form{
+    margin-top: 30px;
+    
+   }
+  .forgot{
+    align-items: center;
+    color: white;
+   }
+   .input-box{
+    width: 100%;
+    margin-top: 20px;
+    
+  
+   }
+   .input-box label{
+    color: white;
+   }
+  
+   .input-box.success.input{
+    border-color: #2ecc2e;
+   }
+   .input-box.error.input{
+    border-color: red;
+   }
+  
+   :where(.input-box input, .select-box ){
+    position: relative;
+    height: 30px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    border: 1px solid;
+    border-radius: 5px;
+    color: black;
+   }
+   .column{
+    display: flex;
+    column-gap: 15px;
+   }
+   .gender-box h3 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 8px;
+   }
+   :where(.gender-option,.gender){
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+   }
+   .gender{
+    column-gap: 5px;
+    cursor: pointer;
+   }
+   :where(.gender input .gender label) {
+    cursor: pointer;
+   }
+.gender label{
+  color: whitesmoke;
+}
+.check-box h3 {
+  color: white;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+ }
+ :where(.check-option, .QalifQuication){
+display: flex;
+align-items: center;
+column-gap: 50px;
+ }
+ .check-box{
+  column-gap: 5px;
+  cursor: pointer;
+ }
+ :where(.gender input .gender label) {
+  cursor: pointer;
+ }
+.Qualification label{
+color: whitesmoke;
+}
+   .button1{
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-left: 50px;
+    transition: all 0.2s ease;
+    color: whitesmoke;
+  
+   }
+   .button1:hover{
+    color:  greenyellow;
+   }
+.select-box select{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
+.Error{
+  color: red;
+  margin-top: 5px;
+}
+.input-box .success.input{
+  border-color: #2ecc2e;
+}
+.input-box.error.input{
+  border-color: red;
+}
+.p{
+  color: whitesmoke;
+}
+/* respansive */
+   @media screen and(max-with:500px) {
+     .column{
+      flex-wrap: wrap;
+    }
+   }
+  
